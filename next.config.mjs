@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
-  output: 'export', // 정적 HTML 내보내기 활성화
+  // output: 'export', // 정적 HTML 내보내기 활성화
   images: {
     unoptimized: true, // 정적 내보내기와 함께 사용하려면 필요
   },
