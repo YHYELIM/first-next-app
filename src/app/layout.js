@@ -1,20 +1,12 @@
-import { Children } from "react";
-
-export default function RootLayout ({children}){
-    return (
-        <html lang="en">
-            <body>
-                <header>
-                    <nav>
-                        <a href="">홈</a>
-                        <a href="/blog">블로그</a>
-                    </nav>
-                </header>
-                 <main>
-                {children}
-            </main>
-            </body>
-            <footer>2025 My Blog</footer>
-        </html>
-    )
+import Link from "next/link";
+export default function RootLayout({ children, dashboard, sidebar }) {
+  return (
+    <html lang="ko">
+        <body>
+            <main>{children}</main>
+            <div className="dashboard">{dashboard}</div>
+            <aside>{sidebar}</aside>
+        </body>
+    </html>
+  );
 }

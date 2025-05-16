@@ -1,9 +1,14 @@
-export default function Home (){
-    return (
-        <div>
-            <h1>Next.js App Router 블로그</h1>
-            <p>App Router 기능을 테스트하는 간단한 블로그입니다.</p>
-            <a href="/blog">블로그 포스트 보기</a>
-        </div>
-    )
+export default function Home() {
+  return (
+    <div>
+      <h1>홈페이지</h1>
+      <p>Next.js 라우팅 예제에 오신 것을 환영합니다!</p>
+      <div>
+        <a href="/about">소개 페이지로 이동</a><br />
+        <a href="/products">제품 목록 페이지로 이동</a>
+      </div>
+    </div>
+  )
 }
+
+
